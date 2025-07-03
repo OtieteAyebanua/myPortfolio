@@ -1,0 +1,87 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.headerLeft {
+}
+.headerName {
+  color: #f4fbfe;
+  font-size: 62px;
+  font-family: "inter";
+  line-height: 60px;
+}
+.wave {
+  display: inline-block;
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.headerSummary {
+  color: #f4fbfe;
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: 400;
+  width: 60%;
+  line-height: 24px;
+  position: relative;
+}
+.downloadMyResume {
+  background: transparent;
+  color: #f4fbfe;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #f4fbfe;
+  border-radius: 3px;
+  padding: 10px 8px;
+  transition: box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.downloadMyResume:hover {
+  box-shadow: 0 0 5px #f4fbfe, 0 0 10px #f4fbfe, 0 0 20px #a855f7,
+    0 0 40px #a855f7;
+  text-shadow: 0 0 2px #a855f7, 0 0 4px #a855f7;
+  background-color: #a855f7;
+  border: 2px solid #a855f7;
+}
+.whatIDoCont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.whatIDoHeader{
+  color: #f4fbfe;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+.whatIDoSum{
+  color:#f4fbfe;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-2px, 1px); }
+  80% { transform: translate(2px, -1px); }
+  100% { transform: translate(0); }
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.5s ease-in-out;
+}
