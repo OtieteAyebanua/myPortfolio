@@ -15,7 +15,7 @@ const socialLinks = [
 
 const Header = () => {
   return (
-    <DisplayCard marginTop="5%">
+    <DisplayCard>
       <div className="headerContainer">
         <div className="headerLeft">
           <h1 className="headerName">
