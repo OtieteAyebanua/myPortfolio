@@ -1,24 +1,43 @@
 import DisplayCard from "./displayCard";
-import './style.css'
+import "./style.css";
 const NavigationBar = () => {
   return (
     <DisplayCard>
       <div className="contactBtnContainer">
-        <button
-        className="contactBtn"
+        <div
           style={{
-            color:"#f4fbfe",
-            fontFamily:"inter",
-            fontSize:16,
-            fontWeight:600,
-            borderRadius:3,
-            padding:3,
-            paddingLeft:5,
-            paddingRight:5
+            textAlign: "center",
+            paddingTop: "0.5rem",
+            paddingBottom: "2rem",
           }}
         >
-          Contact
-        </button>
+          <h1
+            style={{
+              fontSize: "3rem",
+              fontWeight: "bold",
+              color: "#f4fbfe",
+              textShadow: `
+        0 0 6px #a855f7,
+        0 0 12px #a855f7,
+        0 0 24px #a855f7
+      `,
+              letterSpacing: "0.15rem",
+            }}
+          >
+            OTIETE AYEBANUA
+          </h1>
+          <p
+            style={{
+              marginTop: "1rem",
+              color: "#f4fbfe",
+              fontSize: "1.1rem",
+              opacity: 0.8,
+              textShadow: "0 0 4px #a855f755",
+            }}
+          >
+            Front End Developer · Creative Technologist · Code Artist
+          </p>
+        </div>
       </div>
     </DisplayCard>
   );

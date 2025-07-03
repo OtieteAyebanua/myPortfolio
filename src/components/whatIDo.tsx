@@ -55,7 +55,7 @@ const WhatIDo = () => {
                 textShadow: "0 0 3px #a855f766",
               }}
             >
-              I’m a Full Stack Developer passionate about crafting intelligent,
+              I’m a Front End Developer passionate about crafting intelligent,
               engaging, and high-performing software the kind you didn’t know
               you needed, but can’t live without.
             </p>

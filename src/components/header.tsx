@@ -19,7 +19,7 @@ const Header = () => {
       <div className="headerContainer">
         <div className="headerLeft">
           <h1 className="headerName">
-            {"Full-Stack Software".split("").map((char, index) => (
+            {"Front-End Software".split("").map((char, index) => (
               <span
                 key={index}
                 className="wave"
@@ -47,7 +47,7 @@ const Header = () => {
           </h1>
 
           <h5 className="headerSummary">
-            A passionate Full Stack Software Developer 🚀 having an experience
+            A passionate Front-End Software Developer 🚀 having an experience
             of building Web and Mobile applications with JavaScript / Reactjs /
             Nodejs / React Native and some other cool libraries and frameworks.
           </h5>

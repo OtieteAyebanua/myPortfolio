@@ -10,6 +10,7 @@ function App() {
   return (
     <>
     <Background/>
+    <NavigationBar/>
       <Header/>
       <WhatIDo/>
       <Experiences/>
