@@ -3,14 +3,14 @@ import VrTechGuy from "../assets/vrtechguy.json";
 import Lottie from "lottie-react";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 const socialLinks = [
-  { icon: Github, url: "https://github.com/yourusername", bg: "#24292e" },
+  { icon: Github, url: "https://github.com/OtieteAyebanua", bg: "#24292e" },
   {
     icon: Linkedin,
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/otiete-ayebanua-4a09772a5/",
     bg: "#0077B5",
   },
-  { icon: Mail, url: "mailto:youremail@example.com", bg: "#EA4335" },
-    { icon: Twitter, url: "mailto:youremail@example.com", bg: "#EA4335" },
+  { icon: Mail, url: "ayebanuaotiete@gmail.com", bg: "#EA4335" },
+  { icon: Twitter, url: "https://x.com/TheCodeMonkey_", bg: "#24292e" },
 ];
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
       <div className="headerContainer">
         <div className="headerLeft">
           <h1 className="headerName">
-            {"Front-End Software".split("").map((char, index) => (
+            {"Mid Level Software".split("").map((char, index) => (
               <span
                 key={index}
                 className="wave"
@@ -47,11 +47,11 @@ const Header = () => {
           </h1>
 
           <h5 className="headerSummary">
-            A passionate Front-End Software Developer 🚀 having an experience
-            of building Web and Mobile applications with JavaScript / Reactjs /
-            Nodejs / React Native and some other cool libraries and frameworks.
+            A passionate Software Developer 🚀 having an experience of building
+            Web and Mobile applications with Dot.Net / JavaScript / React.js /
+            Node.js / React Native and some other cool libraries and frameworks.
           </h5>
-          <div style={{ display: "flex", gap: "10px",marginBottom:"10px" }}>
+          <div style={{ display: "flex", gap: "10px", marginBottom: "10px" }}>
             {socialLinks.map(({ icon: Icon, url, bg }, index) => (
               <a
                 key={index}
@@ -83,11 +83,12 @@ const Header = () => {
               top: "20px",
             }}
           >
-            <button className="downloadMyResume">CONTACT ME</button>
-            <button className="downloadMyResume">DOWNLOAD MY RESUME</button>
+            <a href="src\assets\Otiete_Ayebanua_Resume.pdf" download>
+              <button className="downloadMyResume">DOWNLOAD MY RESUME</button>
+            </a>
           </div>
         </div>
-        <div>
+        <div className="headerLottie">
           <Lottie animationData={VrTechGuy} loop={true} />
         </div>
       </div>

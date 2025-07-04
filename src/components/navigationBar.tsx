@@ -12,6 +12,7 @@ const NavigationBar = () => {
           }}
         >
           <h1
+            className="navName"
             style={{
               fontSize: "3rem",
               fontWeight: "bold",
@@ -27,6 +28,7 @@ const NavigationBar = () => {
             OTIETE AYEBANUA
           </h1>
           <p
+            className="headerList"
             style={{
               marginTop: "1rem",
               color: "#f4fbfe",
@@ -35,7 +37,7 @@ const NavigationBar = () => {
               textShadow: "0 0 4px #a855f755",
             }}
           >
-            Front End Developer · Creative Technologist · Code Artist
+            Full Stack Developer · Innovative Technologist · Code Monkey
           </p>
         </div>
       </div>

@@ -9,11 +9,29 @@ const frontendSkills = [
   "HTML",
   "CSS",
   "Three.js",
+  "Uno",
+];
+const backendSkills = [
+  "C#",
+  "ASP.NET",
+  "Node.js",
+  "Express",
+  "MQL5",
+  "SignalR",
+  "MongoDB",
+  "MSSQL",
+  "Redis",
+  "Docker",
+  "Azure DevOps",
+  "GitHub Actions",
+  "Linux Shell",
+  "Git",
+  "REST APIs",
 ];
 const whatIDo = [
   {
     icon: "⚡",
-    text: "Build sleek, interactive UIs for web and mobile with React, Next.js, and React Native.",
+    text: "Build sleek, interactive UIs for web, desktop and mobile with React, Next.js, dot.Net and React Native.",
   },
   {
     icon: "🚀",
@@ -29,12 +47,13 @@ const WhatIDo = () => {
     <DisplayCard marginTop="5%">
       {" "}
       <div className="whatIDoCont">
-        <div>
+        <div className="WIDLottie">
           <Lottie animationData={OrbAnim} loop={true} />
         </div>
-        <div style={{ width: "80%" }}>
+        <div className="WIDSC" style={{ width: "80%" }}>
           <div style={{ textAlign: "center", marginBottom: "2rem" }}>
             <h1
+              className="whatIDo"
               style={{
                 fontSize: "2.5rem",
                 fontWeight: "700",
@@ -46,6 +65,7 @@ const WhatIDo = () => {
               What I Do 💻✨
             </h1>
             <p
+              className="whatIDoSum"
               style={{
                 fontSize: "1.125rem",
                 color: "#f4fbfe",
@@ -55,9 +75,9 @@ const WhatIDo = () => {
                 textShadow: "0 0 3px #a855f766",
               }}
             >
-              I’m a Front End Developer passionate about crafting intelligent,
-              engaging, and high-performing software the kind you didn’t know
-              you needed, but can’t live without.
+              I’m a Full Stack Mid level Developer passionate about crafting
+              intelligent, engaging, and high-performing software the kind you
+              didn’t know you needed, but can’t live without.
             </p>
           </div>
           <div
@@ -69,10 +89,11 @@ const WhatIDo = () => {
               borderRadius: "12px",
               padding: "24px",
               boxShadow: "0 0 12px #a855f7aa",
-              marginBottom:"3%"
+              marginBottom: "3%",
             }}
           >
             <h2
+              className="FES"
               style={{
                 color: "#f4fbfe",
                 fontSize: "1.5rem",
@@ -82,13 +103,14 @@ const WhatIDo = () => {
                 textShadow: "0 0 6px #a855f7, 0 0 12px #a855f7",
               }}
             >
-              Frontend Stack 🚀
+              Front-End Stack 🚀
             </h2>
             <ul
               style={{ paddingLeft: "1.2rem", color: "#f4fbfe", lineHeight: 2 }}
             >
               {frontendSkills.map((skill, index) => (
                 <li
+                  className="skills"
                   key={index}
                   style={{
                     listStyleType: "🌐",
@@ -101,11 +123,53 @@ const WhatIDo = () => {
             </ul>
           </div>
           <div
-            style={{maxWidth:"550px", margin: "auto"}}
+            style={{
+              maxWidth: "500px",
+              margin: "auto",
+              background: "#1e1e1e",
+              border: "1px solid #f4fbfe",
+              borderRadius: "12px",
+              padding: "24px",
+              boxShadow: "0 0 12px #a855f7aa",
+              marginBottom: "3%",
+            }}
           >
-            <ul style={{ listStyle: "none", paddingLeft: 0,margin:"auto" }}>
+            <h2
+              className="FES"
+              style={{
+                color: "#f4fbfe",
+                fontSize: "1.5rem",
+                marginBottom: "16px",
+                borderBottom: "1px solid #a855f7",
+                paddingBottom: "8px",
+                textShadow: "0 0 6px #a855f7, 0 0 12px #a855f7",
+              }}
+            >
+              Backend-End Stack 🚀
+            </h2>
+            <ul
+              style={{ paddingLeft: "1.2rem", color: "#f4fbfe", lineHeight: 2 }}
+            >
+              {backendSkills.map((skill, index) => (
+                <li
+                  className="skills"
+                  key={index}
+                  style={{
+                    listStyleType: "🌐",
+                    textShadow: "0 0 4px #a855f7, 0 0 8px #a855f7",
+                  }}
+                >
+                  <span style={{ marginLeft: "0.5rem" }}>{skill}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div style={{ maxWidth: "550px", margin: "auto" }}>
+            <ul style={{ listStyle: "none", paddingLeft: 0, margin: "auto" }}>
               {whatIDo.map((item, index) => (
                 <li
+                  className="WID"
                   key={index}
                   style={{
                     display: "flex",

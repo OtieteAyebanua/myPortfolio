@@ -8,7 +8,6 @@
   color: #f4fbfe;
   font-size: 62px;
   font-family: "inter";
-  line-height: 60px;
 }
 .wave {
   display: inline-block;
@@ -59,27 +58,166 @@
   padding-left: 5%;
   padding-right: 5%;
 }
-.whatIDoHeader{
+.whatIDoHeader {
   color: #f4fbfe;
   font-weight: 500;
   font-size: 32px;
   text-align: center;
 }
-.whatIDoSum{
-  color:#f4fbfe;
+.whatIDoSum {
+  color: #f4fbfe;
   font-weight: 400;
   font-size: 18px;
 }
 
 @keyframes shake {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 1px); }
-  40% { transform: translate(2px, -1px); }
-  60% { transform: translate(-2px, 1px); }
-  80% { transform: translate(2px, -1px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 1px);
+  }
+  40% {
+    transform: translate(2px, -1px);
+  }
+  60% {
+    transform: translate(-2px, 1px);
+  }
+  80% {
+    transform: translate(2px, -1px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .shake-on-hover:hover {
   animation: shake 0.5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .navName {
+    font-size: clamp(1.5rem, 4vw, 3rem) !important;
+  }
+  .headerContainer {
+    flex-direction: column;
+  }
+  .headerList {
+    font-size: clamp(0.2rem, 3vw, 1rem) !important;
+  }
+  .headerName {
+    font-size: clamp(23px, 4vw, 62px) !important;
+  }
+  .headerSummary {
+    font-size: clamp(10px, 4vw, 16px);
+    width: 100%;
+  }
+  .downloadMyResume {
+    font-size: clamp(8px, 2vw, 14px);
+    font-weight: 600;
+    border: 2px solid #f4fbfe;
+    border-radius: 3px;
+    padding: 10px 8px;
+  }
+  .headerLottie {
+    width: 100%;
+  }
+  .whatIDoCont {
+    flex-direction: column-reverse;
+  }
+  .whatIDo {
+    font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  }
+  .whatIDoSum {
+    font-size: clamp(0.1rem, 3.7vw, 1.125rem) !important;
+  }
+  .FES {
+    font-size: clamp(1rem, 4vw, 1.5rem) !important;
+  }
+  .skills {
+    font-size: clamp(12px, 4vw, 16px);
+  }
+  .WID {
+    font-size: clamp(0.4rem, 4vw, 1.05rem) !important;
+  }
+  .WIDLottie {
+    width: 100%;
+  }
+  .WIDSC {
+    width: 100% !important;
+  }
+  .expCon {
+    flex-direction: column;
+  }
+  .exp {
+    font-size: clamp(1.5rem, 4vw, 2rem) !important;
+  }
+  .expCard {
+    flex-direction: column !important;
+    padding: clamp(0.5rem, 2vw, 1.5rem) !important;
+    width: 98%;
+    margin: auto;
+  }
+  .expT {
+    font-size: clamp(0.5rem, 4vw, 1.1rem) !important;
+  }
+  .expC {
+    font-size: clamp(0.1rem, 3vw, 0.9rem) !important;
+  }
+
+  .expD {
+    font-size: clamp(0.1rem, 2vw, 0.95rem) !important;
+  }
+  .expCard1 {
+    padding: 0 !important;
+  }
+  .expCardCon {
+    flex: 0 !important;
+  }
+  .MPC {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .MPW {
+    font-size: clamp(1.5rem, 4vw, 2rem) !important;
+  }
+  .MPcard {
+    width: 90%;
+    margin: auto;
+  }
+  .madeBy {
+    font-size: clamp(0.5rem, 4vw, 1.2rem) !important;
+  }
+  .links {
+    font-size: clamp(0.5rem, 4vw, 1.25rem) !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1232px) {
+  .expT {
+    font-size: clamp(0.5rem, 1.5vw, 1.1rem) !important;
+  }
+  .expC {
+    font-size: clamp(0.1rem, 1vw, 0.9rem) !important;
+  }
+
+  .expD {
+    font-size: clamp(0.1rem, 1vw, 0.95rem) !important;
+  }
+  .expBP {
+    font-size: 0.7rem !important;
+    padding-left: 0.1rem !important;
+  }
+  .expCard {
+    flex-direction: column !important;
+    padding: clamp(0.5rem, 2vw, 1.5rem) !important;
+    width: 98%;
+    margin: auto;
+  }
+  .expCardCon {
+    flex: 0 !important;
+  }
+  .headerName {
+    font-size: clamp(23px, 4vw, 62px) !important;
+  }
 }

@@ -2,32 +2,70 @@ import DisplayCard from "./displayCard";
 
 const projects = [
   {
-    title: "3D Web Experience",
+    title: "🌍 3D Earth Experience",
     description:
-      "Created immersive Three.js projects for interactive websites.",
-    image: "/images/threejs-project.png", // Replace with real path
+      "Crafted immersive web experiences inspired by Earth, blending interactive design with rich 3D visuals.",
     link: "https://your-project-link.com",
   },
   {
-    title: "Product Visualizer",
+    title: "🤖 Expert Advisor Bot",
     description:
-      "Built a dynamic product showcase with WebGL and custom shaders.",
-    image: "/images/product-visual.png",
-    link: "https://your-other-project.com",
+      "Developed a customizable algorithmic trading bot that automates execution, processes signals, and deploys strategies across various markets.",
+  },
+  {
+    title: "🎞️ Video Encoding Engine",
+    description:
+      "Built a high-performance engine that converts raw video footage into lightweight, high-quality MP4 files efficiently.",
+    link: "",
+  },
+  {
+    title: "🚀 AlgoCipher Website",
+    description: "Designed and launched the official landing page for AlgoCipher, showcasing its features, tools, and trading solutions.",
+    link: "",
+  },
+  {
+    title: "🧩 TariOty Portfolio",
+    description: "Created a sleek and modern portfolio platform for TariOty, highlighting its services and creative works.",
+    link: "",
+  },
+  {
+    title: "🎮 SkillGap Platform",
+    description: "Engineered a web application that enables gamers to create, join, and bet on contests in a competitive environment.",
+    link: "",
+  },
+  {
+    title: "🗣️ Voice Assistant",
+    description: "Built a smart web assistant to help users track time, set reminders, and manage daily events seamlessly.",
+    link: "",
+  },
+  {
+    title: "📞 Voice Over IP (VoIP)",
+    description: "Implemented a real-time voice communication app using WebSocket for smooth, browser-based audio calls.",
+    link: "",
+  },
+  {
+    title: "🖼️ Image Difference Algorithm",
+    description: "Developed an algorithm to accurately detect and display visual differences between two images.",
+    link: "",
+  },
+  {
+    title: "📬 UNN Mail Newsletter",
+    description: "Created a modern newsletter web app for my university to streamline communication and announcements.",
+    link: "",
   },
 ];
 const Projects = () => {
   return (
     <DisplayCard>
-      <div></div>
       <div
+        className="MPC"
         style={{
           padding: "3rem 1rem",
-          maxWidth: "1200px",
           margin: "auto",
         }}
       >
         <h2
+          className="MPW"
           style={{
             textAlign: "center",
             color: "#f4fbfe",
@@ -48,6 +86,7 @@ const Projects = () => {
         >
           {projects.map((project, index) => (
             <a
+              className="MPcard"
               key={index}
               href={project.link}
               target="_blank"

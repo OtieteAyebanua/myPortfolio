@@ -7,10 +7,13 @@ const Footer = () => {
         borderTop: "1px solid #a855f722",
         color: "#f4fbfe",
         textAlign: "center",
-        textShadow: "0 0 4px #a855f7"
+        textShadow: "0 0 4px #a855f7",
       }}
     >
-      <div style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>
+      <div
+        className="madeBy"
+        style={{ fontSize: "1.2rem", marginBottom: "1rem" }}
+      >
         Made with 💻 & 💙 by <strong>Otiete Ayebanua</strong>
       </div>
 
@@ -19,11 +22,12 @@ const Footer = () => {
           display: "flex",
           justifyContent: "center",
           gap: "1.5rem",
-          marginBottom: "1rem"
+          marginBottom: "1rem",
         }}
       >
         <a
-          href="https://github.com/yourusername"
+          className="links"
+          href="https://github.com/OtieteAyebanua"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
@@ -31,7 +35,8 @@ const Footer = () => {
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          className="links"
+          href="https://www.linkedin.com/in/otiete-ayebanua-4a09772a5/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
@@ -39,20 +44,22 @@ const Footer = () => {
           LinkedIn
         </a>
         <a
-          href="mailto:your@email.com"
+          className="links"
+          href="https://x.com/TheCodeMonkey_"
           style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
         >
           Twitter
         </a>
         <a
-          href="mailto:your@email.com"
+          className="links"
+          href="ayebanuaotiete@gmail.com"
           style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
         >
           Email
         </a>
       </div>
 
-      <small style={{ opacity: 0.6 }}>
+      <small style={{ opacity: 0.6, fontSize: "10px" }}>
         &copy; {new Date().getFullYear()} Otiete Ayebanua. All rights reserved.
       </small>
     </footer>

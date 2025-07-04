@@ -37,11 +37,23 @@ const experiences = [
 const Experiences = () => {
   return (
     <DisplayCard>
-      <div style={{display:"flex",alignItems:"flex-start",justifyContent:"space-between",paddingLeft:"5%",paddingRight:"5%",gap:"10px"}}>
+      <div
+        className="expCon"
+        style={{
+          display: "flex",
+          alignItems: "flex-start",
+          justifyContent: "space-between",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          gap: "10px",
+        }}
+      >
         <div
-          style={{ padding: "3rem 1rem", margin: "auto",width:"100%" }}
+          className="expCard1"
+          style={{ padding: "3rem 1rem", margin: "auto", width: "100%" }}
         >
           <h2
+            className="exp"
             style={{
               textAlign: "center",
               color: "#f4fbfe",
@@ -61,6 +73,7 @@ const Experiences = () => {
           >
             {experiences.map((exp, index) => (
               <div
+                className="expCard"
                 key={index}
                 style={{
                   display: "flex",
@@ -74,24 +87,35 @@ const Experiences = () => {
                 }}
               >
                 <div
+                className="expCardCon"
                   style={{
                     flex: "0 0 200px",
                     color: "#f4fbfe",
                     fontWeight: 600,
                   }}
                 >
-                  <div style={{ marginBottom: "0.5rem", fontSize: "1.1rem" }}>
+                  <div
+                    className="expT"
+                    style={{ marginBottom: "0.5rem", fontSize: "1.1rem" }}
+                  >
                     {exp.title}
                   </div>
-                  <div style={{ color: "#a855f7", fontSize: "0.95rem" }}>
+                  <div
+                    className="expC"
+                    style={{ color: "#a855f7", fontSize: "0.95rem" }}
+                  >
                     {exp.company}
                   </div>
-                  <div style={{ fontSize: "0.85rem", opacity: 0.7 }}>
+                  <div
+                    className="expD"
+                    style={{ fontSize: "0.85rem", opacity: 0.7 }}
+                  >
                     {exp.date}
                   </div>
                 </div>
 
                 <ul
+                  className="expBP"
                   style={{
                     color: "#f4fbfe",
                     fontSize: "0.95rem",
