@@ -30,7 +30,7 @@ const Footer = () => {
           href="https://github.com/OtieteAyebanua"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
+          style={{ color: "#f4fbfe", fontSize: "1.25rem",position:"relative",zIndex:9999  }}
         >
           GitHub
         </a>
@@ -39,21 +39,21 @@ const Footer = () => {
           href="https://www.linkedin.com/in/otiete-ayebanua-4a09772a5/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
+          style={{ color: "#f4fbfe", fontSize: "1.25rem",position:"relative",zIndex:9999  }}
         >
           LinkedIn
         </a>
         <a
           className="links"
           href="https://x.com/TheCodeMonkey_"
-          style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
+          style={{ color: "#f4fbfe", fontSize: "1.25rem",position:"relative",zIndex:9999  }}
         >
           Twitter
         </a>
         <a
           className="links"
           href="ayebanuaotiete@gmail.com"
-          style={{ color: "#f4fbfe", fontSize: "1.25rem" }}
+          style={{ color: "#f4fbfe", fontSize: "1.25rem",position:"relative",zIndex:9999  }}
         >
           Email
         </a>

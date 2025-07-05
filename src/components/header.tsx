@@ -51,7 +51,7 @@ const Header = () => {
             Web and Mobile applications with Dot.Net / JavaScript / React.js /
             Node.js / React Native and some other cool libraries and frameworks.
           </h5>
-          <div style={{ display: "flex", gap: "10px", marginBottom: "10px" }}>
+          <div style={{ display: "flex", gap: "10px", marginBottom: "10px",position:"relative",zIndex:9999 }}>
             {socialLinks.map(({ icon: Icon, url, bg }, index) => (
               <a
                 key={index}

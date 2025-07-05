@@ -5,7 +5,7 @@ const projects = [
     title: "🌍 3D Earth Experience",
     description:
       "Crafted immersive web experiences inspired by Earth, blending interactive design with rich 3D visuals.",
-    link: "https://your-project-link.com",
+    link: "",
   },
   {
     title: "🤖 Expert Advisor Bot",
@@ -21,12 +21,12 @@ const projects = [
   {
     title: "🚀 AlgoCipher Website",
     description: "Designed and launched the official landing page for AlgoCipher, showcasing its features, tools, and trading solutions.",
-    link: "",
+    link: "https://algocipherquantitative.com/",
   },
   {
     title: "🧩 TariOty Portfolio",
     description: "Created a sleek and modern portfolio platform for TariOty, highlighting its services and creative works.",
-    link: "",
+    link: "https://tarioty.vercel.app/",
   },
   {
     title: "🎮 SkillGap Platform",
@@ -91,7 +91,7 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: "none", color: "#f4fbfe" }}
+              style={{ textDecoration: "none", color: "#f4fbfe",position:"relative",zIndex:9999  }}
             >
               <div
                 className="shake-on-hover"
